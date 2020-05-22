@@ -1,11 +1,10 @@
-
 " Undo Persistance
 set undodir=~/.vim/undodir
 set undofile
 
 " C-c and C-v - Copy/Paste to global clipboard
 vmap <C-c> "+yi
-imap <C-v> <esc>"+gpi
+imap <C-v> <esc>"+gpa
 set clipboard+=unnamed
 
 " Full colors
@@ -19,11 +18,11 @@ hi CursorLine term=bold cterm=bold guibg=Black
 nmap a A
 
 " cool brackets
-imap { {}<Left>
+"imap { {}<Left>
 imap {} {}
-imap ( ()<Left>
+"imap ( ()<Left>
 imap () ()
-imap [ []<Left>
+"imap [ []<Left>
 imap [] []
 imap {<Enter> {<CR>}<Esc>ko
 imap (<Enter> (<CR>)<Esc>ko
@@ -47,4 +46,3 @@ set autoindent
 " autocomplete
 " git clone git://github.com/ajh17/VimCompletesMe.git ~/.vim/pack/vendor/start/VimCompletesMe
 autocmd FileType vim let b:vcm_tab_complete = 'vim'
-
