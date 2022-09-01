@@ -10,9 +10,9 @@ set clipboard+=unnamed
 " Full colors
 set termguicolors
 syntax on
-colorscheme uwu
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Black
+" colorscheme uwu
 
 " line numbers
 set number relativenumber
