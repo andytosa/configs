@@ -10,23 +10,9 @@ set clipboard+=unnamed
 " Full colors
 set termguicolors
 syntax on
-colorscheme tile
+colorscheme uwu
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Black
-
-" appending is always fun on the end of the line
-nmap a A
-
-" cool brackets
-"imap { {}<Left>
-imap {} {}
-"imap ( ()<Left>
-imap () ()
-"imap [ []<Left>
-imap [] []
-imap {<Enter> {<CR>}<Esc>ko
-imap (<Enter> (<CR>)<Esc>ko
-imap [<Enter> [<CR>]<Esc>ko
 
 " line numbers
 set number relativenumber
@@ -42,7 +28,9 @@ set shiftwidth=4
 set softtabstop=0
 set smartindent
 set autoindent
+set expandtab
 
 " autocomplete
-" git clone git://github.com/ajh17/VimCompletesMe.git ~/.vim/pack/vendor/start/VimCompletesMe
+" git clone https://github.com/ajh17/VimCompletesMe.git ~/.vim/pack/vendor/start/VimCompletesMe
 autocmd FileType vim let b:vcm_tab_complete = 'vim'
+
